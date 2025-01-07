@@ -1,0 +1,25 @@
+# Virtual environment
+django_env/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Database
+db.sqlite3
+
+# Secret keys
+*.env
+
+# OS generated files
+.DS_Store
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Static files collection
+/static/
+
+# Media files
+/media/
