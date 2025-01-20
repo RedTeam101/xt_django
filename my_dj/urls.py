@@ -1,5 +1,5 @@
 """
-URL configuration for config project.
+URL configuration for my_app project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),       # 保留 admin
-    path('myapp/', include('myapp.urls')), # 存取 myapp 的 url
+    path('admin/', admin.site.urls),            # 保留 admin
+    path('myapp/', include('myapp.urls')),      # 存取 myapp 的 url
+    path('tem_app/', include('tem_app.urls')),  # 存取 tem_app 的 url
 ]
