@@ -6,3 +6,10 @@ def tem_var(request, name):
     # it will display the text after api endpoint as header
     # e.g. http://127.0.0.1:8000/tem_app/var/12345/
     # will show: "12345" as header
+
+def pass_dict(request):
+    sample = {
+        "name": "Django",
+        "teacher": "Dr. Su"
+    }
+    return render(request, "show_info.html", {"product": sample})
