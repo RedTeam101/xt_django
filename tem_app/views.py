@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from person import Person
+from .person import Person
 
 # Create your views here.
 def tem_var(request, name):
