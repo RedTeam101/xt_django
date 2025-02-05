@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from person import Person
 
 # Create your views here.
 def tem_var(request, name):
@@ -13,3 +14,7 @@ def pass_dict(request):
         "teacher": "Dr. Su"
     }
     return render(request, "show_info.html", {"product": sample})
+
+def pass_obj(request):
+    rick = Person("Rick", 80)
+    return render(request, "show_info.html", {"person": rick})
