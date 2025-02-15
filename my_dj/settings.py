@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #'rest_framework',
     'myapp',                        # 加入 myapp
-    'tem_app'
+    'tem_app',                      # 加入 tem_app
+    'url_app'                       # 加入 url_app
 ]
 
 MIDDLEWARE = [

@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),            # 保留 admin
     path('myapp/', include('myapp.urls')),      # 存取 myapp 的 url
     path('tem_app/', include('tem_app.urls')),  # 存取 tem_app 的 url
+    path('url/', include ('url_app.urls', namespace='url')),     # 存取 url_app 的 url
 ]

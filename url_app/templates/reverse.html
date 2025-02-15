@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>URL 反向解析</title>
+
+</head>
+
+<body>
+不传参的反向解析：<a href="{% url 'url:hello' %}">反向解析</a>
+<hr><br>
+传参的反向解析:<a href="{% url 'url:show' 'apple' 'F1'%}">传参的反向解析</a>
+<hr><br>
+视图函数的反向解析：<a href="{% url 'url:view' %}">视图函数的反向解析</a>
+
+</body>
+</html>
